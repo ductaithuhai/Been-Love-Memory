@@ -6,12 +6,10 @@ const get_day_of_time = (d1, d2) => {
 };
 
 let cele = new Date('2021-06-04');
-console.log(cele.toUTCString());
-//Tue, 08 Oct 2019 00:00:00 GMT
+console.log(cele.toString());
 
 let today = new Date();
-console.log(today.toUTCString());
-//Wed, 22 Dec 2021 01:30:49 GMT
+console.log(today.toString());
 
 let time = get_day_of_time(cele,today)
 document.write(time+ " day");

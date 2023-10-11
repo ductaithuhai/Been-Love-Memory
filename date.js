@@ -1,7 +1,9 @@
 
 const get_day_of_time = (d1, d2) => {
     let ms1 = d1.getTime();
+    console.log(d1);
     let ms2 = d2.getTime();
+    console.log(d2);
     return Math.ceil((ms2 - ms1) / (24*60*60*1000));
 };
 
@@ -13,4 +15,3 @@ console.log(today.toString());
 
 let time = get_day_of_time(cele,today)
 document.write(time+ " day");
-//807 day
